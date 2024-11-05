@@ -78,7 +78,7 @@ def get_current_location_weather():
         messagebox.showerror("Error", "Could not determine current location. Please enter a city name.")
 
 # Search box and layout setup
-search_image = PhotoImage(file="C:/Users/Choice/OneDrive/Desktop/Weather App/searchbar.png")
+search_image = PhotoImage(file="C:/Users/Choice/OneDrive/Desktop/Weather App/images/searchbar.png")
 myimage = Label(image=search_image)
 myimage.place(x=11, y=20)
 
@@ -86,17 +86,17 @@ textfield = tk.Entry(root, justify="center", width=17, font=("poppins", 30, "bol
 textfield.place(x=90, y=70)
 textfield.focus()
 
-search_icon = PhotoImage(file="C:/Users/Choice/OneDrive/Desktop/Weather App/searchicon (2).png")
+search_icon = PhotoImage(file="C:/Users/Choice/OneDrive/Desktop/Weather App/images/searchicon (2).png")
 search_myimage = Label(image=search_icon, cursor="hand2", borderwidth=0, bg="#404040")
 search_myimage.place(x=473, y=57)
 search_myimage.bind("<Button-1>", lambda event: getWeather())
 
 # Additional UI elements
-Logo_image = PhotoImage(file="C:/Users/Choice/OneDrive/Desktop/Weather App/logo.png")
+Logo_image = PhotoImage(file="C:/Users/Choice/OneDrive/Desktop/Weather App/images/logo.png")
 logo = Label(image=Logo_image)
 logo.place(x=150, y=130)
 
-Frame_image = PhotoImage(file="C:/Users/Choice/OneDrive/Desktop/Weather App/lightblue (1).png")
+Frame_image = PhotoImage(file="C:/Users/Choice/OneDrive/Desktop/Weather App/images/lightblue (1).png")
 frame_myimage = Label(image=Frame_image)
 frame_myimage.pack(padx=5, pady=5, side=tk.BOTTOM)
 
